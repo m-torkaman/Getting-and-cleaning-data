@@ -1,4 +1,4 @@
-       ## Codebook
+       # Codebook
  # Human Activity Recognition Using Smartphones Data Set
 This codebook describes the variables, the data, and any transformations or work that are performed to clean the data.
 # The data source
