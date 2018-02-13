@@ -8,7 +8,8 @@
 
 
 
-## Setting working directory 
+## Setting your working directory 
+setwd("E:/coursera/3.GettingandCleaningData/CourseProject/UCI HAR Dataset/")
 ## Loading packages
 library(reshape2)
 library(data.table)
