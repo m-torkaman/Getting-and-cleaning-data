@@ -41,18 +41,30 @@ There are 5 parts:
  
  ## How “run_analysis.R” implements the transformation aims:
  
- After data source downloaded into working directory: 
-  1- 	Required packages “reshapre2” and “data.table”, “dplyr” loaded. 
+     After data source downloaded into working directory: 
+  1- 	Required packages “reshapre2” and “data.table”, “dplyr” loaded.  
+  
   2-	feutures.txt file is loaded, and the positions and labels of required data columns taken from it.  
+  
   3-	Activity labels are loaded from the activity_labels.txt file.
+  
   4- 	Activity Id for test group data loaded from /test/y_test.txt, and merged with activity labels. 
+  
   5-	Test group data loaded from /test/X_test.txt .
+  
   6- 	Only required columns of test group data is exteracted and kept, and each feature name assigned to the selected columns. 
+  
   7- 	Subject IDs for test group data loaded from test/subject_test.txt.
+  
   8-	A new data table created by merging (column-wise) the subject ID, activity labels, and test group datasets.  
+  
   9-	Columns are renamed (labelled) appropriately for later processes and   with descriptive variable names.  
+  
   10-	All the above steps are also performed on the train group data. Note that the train data loaded from respected file and folders  responding to the train datasets.   
+  
   11-	Both test and train datasets are merged together (raw-wise) to create the merged dataset. 
+  
   12-	To create tidy data from the merged data, the merged data first melted to a tall data table which represents all the combination of each subject, each activity and each feature variable. 
+  
   13-	Finally, the melted data is summarised to show the average of each variable for each activity and each subject.   
   
