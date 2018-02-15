@@ -73,4 +73,4 @@ meltData <- melt.data.table(allData, id.vars = c("subject", "activity"),
 ## creating tidy dataset of id variables and mean of measure vaiables.
 tidyMeanData <- dcast.data.table(meltData, subject + activity ~ features, mean)
 ## writing tidy data to disc
-write.table(tidyMeanData, file = "./tidyData.txt")
+write.table(tidyMeanData, file = "./tidyData.txt", rowname = FALSE)
